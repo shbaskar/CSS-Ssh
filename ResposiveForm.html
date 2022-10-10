@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+    div{
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+    }
+    input[type=text],select{
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+                
+    }
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+        }
+        .col-25{
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        .col-75{
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+</style>
+</head>
+<body>
+    <div>
+        <form>
+            <div class="col-25">
+            <lable for="fname">First Name</lable>
+            </div>
+            <div class="col-75">
+            <input type="text" name="firstname" id="fname" placeholder="First Name" required><br>
+            </div>
+            <div class="col-25" >
+            <lable for="lname">Last Name</lable>
+            </div>
+            <div class="col-75">
+            <input type="text" name="firstname" id="lname" placeholder="First Name" required><br>
+            </div>
+            <div class="col-25">
+            <label for="country">Country</label>
+            </div>
+            <div class="col-75">
+            <select id="country" name="Country">
+                <option value="au">Australia</option>
+                <option value="us">USA</option>
+                <option value="in">India</option>
+
+            </select>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
